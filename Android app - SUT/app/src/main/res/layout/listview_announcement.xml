@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/imgAnnouncementId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtAnnouncementTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="Title"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAnnouncementMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Within 2 days there will be a cricket match arranged by our society at our garden. All man, woman, and also kids can participate in the match. To participate please confirm your name to the secretary before 9 december. Last date for registration is 9th December 2018." />
+
+        <ImageView
+            android:id="@+id/imgAnnouncement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_image_blank" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtAnnouncementDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10/12/2018 10:55"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

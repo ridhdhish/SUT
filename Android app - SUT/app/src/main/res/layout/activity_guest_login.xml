@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newback"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.guest_login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center_horizontal"
+        android:text="Guest Login"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@drawable/right_top_bottom_border"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="30dp">
+
+            <EditText
+                android:id="@+id/GuestLoginEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7.5dp"
+                android:background="@android:color/transparent"
+                android:hint="EmailId"
+                android:inputType="text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <EditText
+                android:id="@+id/GuestLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7.5dp"
+                android:background="@android:color/transparent"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="25dp">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logo1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGuestRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/right_top_bottom_border"
+        android:elevation="4dp"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Register"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llUserLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:background="@drawable/right_top_bottom_border"
+        android:elevation="4dp"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="User Login"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGuestForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="400dp"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot"
+            android:textSize="20dp"
+            android:textColor="#A9A9A9"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

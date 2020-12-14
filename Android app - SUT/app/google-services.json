@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "423159204587",
+    "firebase_url": "https://sutofficial18.firebaseio.com",
+    "project_id": "sutofficial18",
+    "storage_bucket": "sutofficial18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423159204587:android:d815a33c6ee59ff4",
+        "android_client_info": {
+          "package_name": "com.example.ridhdhish.sut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423159204587-s3fr9d0ri6gu96icbubhv3ah2c3r8n14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSw3p9CBzJXgOHTaQP8SKb9L1QZ2_ybyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

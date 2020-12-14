@@ -1,0 +1,69 @@
+;Copyright (c) Acer Incorporated
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=HIDClass ;
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da} ;
+Provider=%VENDOR%
+CatalogFile=LMDriver.cat
+DriverVer=07/16/2013,8.0.0.1
+
+[SourceDisksFiles]
+LMDriver.sys  = 1
+RadioShim.sys = 1
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[DestinationDirs]
+Drivers_Dir = 12
+
+
+[Manufacturer]
+%VENDOR%=Standard, NTx86
+
+[Standard.NTx86]
+%LMDriver.DeviceDesc% = LMDriver_Device, Acer\LMDriver
+
+[LMDriver_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+LMDriver.sys
+RadioShim.sys
+
+[LMDriver_Device.NT.Services]
+AddService = RadioShim,,RadioShim_Service_Inst,
+AddService = LMDriver,%SPSVCINST_ASSOCSERVICE%, LMDriver_Service_Inst
+
+[LMDriver_Device.NT.HW]
+AddReg = LM_Parameters.AddReg
+
+[LM_Parameters.AddReg]
+HKR,,"UpperFilters",0x00010000,"RadioShim"
+
+[LMDriver_Service_Inst]
+DisplayName    = %LMDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 0               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\LMDriver.sys
+;LoadOrderGroup = Extended Base
+
+[RadioShim_Service_Inst]
+DisplayName    = %RadioShim.SVCDESC%
+ServiceType    = 1				 ; SERVICE_KERNEL_DRIVER
+StartType	   = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\RadioShim.sys
+LoadOrderGroup = PNP Filter
+
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+VENDOR="Acer Incorporated"
+ClassName="Acer Radio Controller" ; TODO: edit ClassName
+DiskName = "Launch Manager Wireless Driver Installation Disk"
+LMDriver.DeviceDesc = "Launch Manager Wireless Device"
+LMDriver.SVCDESC = "Launch Manager Wireless Driver"
+RadioShim.SVCDESC = "Shim for HID-KMDF Interface layer"

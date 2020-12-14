@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here.-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+
+    </style>
+
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#ffffff</item>
+
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#a27ce6</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+    <style name="toolbarColor" parent="AppTheme.NoActionBar">
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
+</resources>

@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit." />
+    <title>SUT</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Favicon-->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css" />
+    <link rel="stylesheet" href="assets/plugins/morrisjs/morris.min.css" />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/color_skins.css" />
+    <!-- Jquery Core Js -->
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+    <script src="assets/bundles/vendorscripts.bundle.js"></script>
+    <script src="assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script src="assets/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+    <script src="assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="assets/bundles/mainscripts.bundle.js"></script>
+    <script src="assets/js/pages/ui/dialogs.js"></script>
+    <script src="assets/js/pages/forms/advanced-form-elements.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var path = window.location.pathname;
+            var pathSplit = path.split("/");
+            var page = pathSplit[pathSplit.length - 1];
+            var pageid = page.substring(0, page.indexOf("."));
+            $("#ulnavigation li").removeClass("active").removeClass("open");
+            $("." + pageid).addClass("active").addClass("open");
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        a {
+            color: #007bff;
+        }
+
+            a:hover, button.btn-link:hover > i:hover {
+                color: #1ab1e3;
+            }
+
+        .sweet-alert p, .sweet-alert h1, .sweet-alert h2, .sweet-alert div {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body class="theme-purple">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scriptmanager" runat="server" />
+        <asp:UpdatePanel ID="updatepanel1" class="inlineblock" runat="server">
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="timer" EventName="Tick" />
+            </Triggers>
+        </asp:UpdatePanel>
+        <asp:Timer OnTick="timer_Tick" ID="timer" Interval="1000" runat="server" />
+        <div>
+            <nav class="top_navbar">
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-12">
+                            <div class="navbar-logo">
+                                <a href="javascript:void(0);" class="bars"></a>
+                                <a class="navbar-brand" href="index.aspx">
+                                    <img src="assets/images/logo.svg" width="30" alt="SUT" /><span class="m-l-10">SUT</span></a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown profile">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                        <asp:Image ImageUrl="assets/images/profile_av.jpg" ID="imgProfilePicture" CssClass="rounded-circle" runat="server" />
+                                    </a>
+                                    <ul class="dropdown-menu pullDown">
+                                        <li>
+                                            <div class="user-info">
+                                                <h6 class="user-name m-b-0">
+                                                    <asp:Label Text="Alizee Thomas" CssClass="user-name m-b-0" ID="lblAdminName" runat="server" />
+                                                </h6>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <hr />
+                                        </li>
+                                        <li>
+                                            <a href="profile.aspx">
+                                                <i class="icon-user m-r-10"></i>
+                                                <span>My Profile</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="ChangePassword.aspx">
+                                                <i class="icon-key m-r-10"></i>
+                                                <span>Change Password</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="signout.aspx">
+                                                <i class="icon-power m-r-10"></i>
+                                                <span>Sign Out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Leftsidebar -->
+            <aside id="leftsidebar" class="sidebar h_menu">
+                <div class="container">
+                    <div class="row clearfix">
+                        <div class="col-12">
+                            <div class="menu">
+                                <ul id="ulnavigation" class="list">
+                                    <li class="active open index"><a href="index.aspx"><i class="icon-grid"></i><span>Home</span></a></li>
+                                    <li class="addAnnouncement viewAnnouncement"><a href="javascript:void(0);" class="menu-toggle"><i class="icon-note"></i><span>Announcements</span></a>
+                                        <ul class="ml-menu">
+                                            <li><a href="addAnnouncement.aspx">Add</a></li>
+                                            <li><a href="viewAnnouncement.aspx">View</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="ViewUsers AddUser"><a href="javascript:void(0);" class="menu-toggle"><i class="icon-users"></i><span>Flat-Holders</span></a>
+                                        <ul class="ml-menu">
+                                            <li><a href="AddUser.aspx">Add</a></li>
+                                            <li><a href="ViewUsers.aspx">View</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="ViewMaintenance AddMaintenance viewMaintenanceRecord"><a href="javascript:void(0);" class="menu-toggle"><i class="icon-doc"></i><span>Maintenance</span></a>
+                                        <ul class="ml-menu">
+                                            <li><a href="AddMaintenance.aspx">Add</a></li>
+                                            <li><a href="ViewMaintenance.aspx">View</a></li>
+                                            <li><a href="viewMaintenanceRecord.aspx">Maintenance Record</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="ViewMeetings AddMeeting"><a href="javascript:void(0);" class="menu-toggle"><i class="icon-calendar"></i><span>Meetings</span></a>
+                                        <ul class="ml-menu">
+                                            <li><a href="AddMeeting.aspx">Add</a></li>
+                                            <li><a href="ViewMeetings.aspx">View</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="services"><a href="services.aspx" class="menu-toggle"><i class="icon-settings"></i><span>Services</span></a>
+                                    </li>
+                                    <li class="complaints"><a href="complaints.aspx" class="menu-toggle"><i class="icon-question"></i><span>Complaints</span></a>
+                                    </li>
+                                    <li class="roadmap"><a href="roadmap.aspx" class="menu-toggle"><i class="icon-map"></i><span>Roadmap</span></a>
+                                    </li>
+                                    <li class="guestUsers"><a href="guestUsers.aspx" class="menu-toggle"><i class="icon-user"></i><span>Guest Users</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="content">
+                <asp:ContentPlaceHolder ID="body" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+        </div>
+        <script src="assets/bundles/morrisscripts.bundle.js"></script>
+        <script src="assets/bundles/jvectormap.bundle.js"></script>
+        <script src="assets/bundles/knob.bundle.js"></script>
+        <script src="assets/js/pages/widgets/infobox/infobox-1.js"></script>
+        <script src="assets/js/pages/index.js"></script>
+    </form>
+</body>
+</html>

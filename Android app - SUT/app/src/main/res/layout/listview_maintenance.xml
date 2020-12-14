@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMaintenance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.maintenance">
+
+    <RelativeLayout
+        android:id="@+id/rlMaintenance"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/txtMaintenanceInterfaceMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_below="@id/txtMaintenanceInterfaceMonth"
+            android:id="@+id/txtMaintenanceInterfaceAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_below="@id/txtMaintenanceInterfaceAmount"
+            android:id="@+id/txtMaintenanceInterfacePenalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_below="@id/txtMaintenanceInterfacePenalty"
+            android:id="@+id/txtMaintenanceInterfaceDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/txtMaintenanceInterfacePostedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:textSize="10dp"
+            android:textColor="#C0C0C0"
+            android:text="20/10/18"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

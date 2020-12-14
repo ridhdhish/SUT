@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.complaint">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#a27ce6">
+
+        </LinearLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/complaintToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#a27ce6"
+            android:theme="@style/toolbarColor"
+            app:titleTextColor="#ffffff">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/rtlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/notification_round_corner"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/edtComplaintTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Title"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/edtComplaintMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Message"
+                    android:maxLines="4"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/btnComplaintSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/notification_round_corner"
+                    android:elevation="4dp"
+                    android:foreground="@drawable/roundedripple"
+                    android:text="Submit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/notification_round_corner"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/Complaintswiperefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/listViewComplaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

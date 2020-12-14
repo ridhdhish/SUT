@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.CompaintUpdate">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/complaintUpdateToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#a27ce6"
+        android:theme="@style/toolbarColor"
+        app:titleTextColor="#ffffff">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notification_round_corner"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="12dp">
+
+        <EditText
+            android:id="@+id/edtComplaintUpdateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Title"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edtComplaintUpdateMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Message"
+            android:textSize="15dp"
+            android:maxLines="4"/>
+
+        <Button
+            android:id="@+id/btnComplaintUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/notification_round_corner"
+            android:elevation="4dp"
+            android:foreground="@drawable/roundedripple"
+            android:text="Update" />
+
+    </LinearLayout>
+
+</LinearLayout>

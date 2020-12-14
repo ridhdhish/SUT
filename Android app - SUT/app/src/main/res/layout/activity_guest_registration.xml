@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newback"
+    tools:context="com.example.ridhdhish.sut.guest_registration">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center_horizontal"
+        android:text="Guest Registration"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@drawable/right_top_bottom_border"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingRight="30dp">
+
+            <EditText
+                android:id="@+id/edtGuestUserRegistrationName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7.5dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Name"
+                android:inputType="text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <EditText
+                android:id="@+id/edtGuestUserRegistrationEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7.5dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter EmailId" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <EditText
+                android:id="@+id/edtGuestUserRegistrationPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7.5dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Password"
+                android:inputType="textPassword" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <EditText
+                android:id="@+id/edtGuestUserRegistrationMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7.5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="7.5dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="25dp">
+
+        <Button
+            android:id="@+id/btnGuestUserRegistrationSignUp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logo1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGuestLogin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/right_top_bottom_border"
+        android:elevation="4dp"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

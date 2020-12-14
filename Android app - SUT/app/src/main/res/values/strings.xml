@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SUT</string>
+    <string name="navHome">Home</string>
+    <string name="navFavoirte">Favoirte</string>
+    <string name="navNotification">Notification</string>
+    <string name="navAccount">Account</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="NAMESPACE">http://tempuri.org/</string>
+    <string name="url">http://192.168.137.1/SUT/WebService.asmx</string>
+
+    <string name="WEBSERVER_IP">http://192.168.137.1/SUT/</string>
+    <string name="forgot"><u>Forgot?</u></string>
+</resources>

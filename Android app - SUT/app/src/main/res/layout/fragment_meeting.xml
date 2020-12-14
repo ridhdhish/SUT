@@ -1,0 +1,466 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.meeting">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/meetingToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#a27ce6"
+        android:theme="@style/toolbarColor"
+        app:titleTextColor="#ffffff">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Meetingswiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listViewMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:scrollbarThumbVertical="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/notification_round_corner"
+                android:elevation="3dp"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attention!!! Today I arrange a meeting for our building renovation... So
+be remain in meeting. It is compulsory for all flat holders.. " />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="3dp"
+                            android:text="Time:: 8:00"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="3dp"
+                            android:text="Date:- 28/11/2018"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D3D3D3" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attention!!! Today I arrange a meeting for our building renovation... So
+be remain in meeting. It is compulsory for all flat holders.. " />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="3dp"
+                            android:text="Time:: 8:00"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="3dp"
+                            android:text="Date:- 28/11/2018"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D3D3D3" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attention!!! Today I arrange a meeting for our building renovation... So
+be remain in meeting. It is compulsory for all flat holders.. " />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="3dp"
+                            android:text="Time:: 8:00"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="3dp"
+                            android:text="Date:- 28/11/2018"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attention!!! Today I arrange a meeting for our building renovation... So
+be remain in meeting. It is compulsory for all flat holders.. " />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="3dp"
+                            android:text="Time:: 8:00"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="3dp"
+                            android:text="Date:- 28/11/2018"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D3D3D3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attention!!! Today I arrange a meeting for our building renovation... So
+be remain in meeting. It is compulsory for all flat holders.. " />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="3dp"
+                            android:text="Time:: 8:00"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="3dp"
+                            android:text="Date:- 28/11/2018"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D3D3D3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attention!!! Today I arrange a meeting for our building renovation... So
+be remain in meeting. It is compulsory for all flat holders.. " />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="3dp"
+                            android:text="Time:: 8:00"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="3dp"
+                            android:text="Date:- 28/11/2018"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D3D3D3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attention!!! Today I arrange a meeting for our building renovation... So
+be remain in meeting. It is compulsory for all flat holders.. " />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="3dp"
+                            android:text="Time:: 8:00"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="3dp"
+                            android:text="Date:- 28/11/2018"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D3D3D3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attention!!! Today I arrange a meeting for our building renovation... So
+be remain in meeting. It is compulsory for all flat holders.. " />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="3dp"
+                            android:text="Time:: 8:00"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="3dp"
+                            android:text="Date:- 28/11/2018"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#D3D3D3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attention!!! Today I arrange a meeting for our building renovation... So
+be remain in meeting. It is compulsory for all flat holders.. " />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="3dp"
+                            android:text="Time:: 8:00"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingRight="3dp"
+                            android:text="Date:- 28/11/2018"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>-->
+</LinearLayout>

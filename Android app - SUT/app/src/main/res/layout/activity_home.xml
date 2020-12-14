@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0f1"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="-10dp"
+        android:background="#a27ce6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="60dp"
+            android:src="@mipmap/icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="SUT"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meetings"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtHomeMeetingView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ripple1"
+                    android:clickable="true"
+                    android:text="View All"
+                    android:textColor="#a27ce6" />
+
+            </RelativeLayout>
+
+            <!--<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:id="@+id/HomeMeetingswiperefresh"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/listViewHomeMeeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Announcements"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAnnouncementView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ripple1"
+                    android:clickable="true"
+                    android:text="View All"
+                    android:textColor="#a27ce6" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--android:id="@+id/HomesAnnouncementwiperefresh"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/listViewHomeAnnouncement"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

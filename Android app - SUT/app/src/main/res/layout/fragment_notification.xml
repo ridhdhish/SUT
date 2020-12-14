@@ -1,0 +1,307 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0f1"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.notification">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="250dp"-->
+        <!--android:background="#a27ce6">-->
+
+    <!--</LinearLayout>-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/notificationToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="#ffffff"
+        android:theme="@style/toolbarColor"
+        android:background="#a27ce6">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Feature Will Available Soon..."
+        android:layout_centerInParent="true"
+        android:textSize="25dp" />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:scrollbarThumbVertical="@android:color/transparent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingBottom="5dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/notification_round_corner"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:text="Announcement"-->
+                        <!--android:textSize="12dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:text="15:55"-->
+                        <!--android:textSize="12dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--&lt;!&ndash;<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:background="@drawable/img"/>&ndash;&gt;-->
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="80dp"-->
+                    <!--app:cardCornerRadius="40dp"-->
+                    <!--android:innerRadius="0dp"-->
+                    <!--android:shape="ring"-->
+                    <!--android:thicknessRatio="2">-->
+                    <!--<ImageView-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_marginTop="-10dp"-->
+                        <!--android:layout_marginLeft="-10dp">-->
+                    <!--</ImageView>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="&quot;This is announcement posted by secratary, and you've missed this notification&quot;"-->
+                    <!--android:textColor="#222222"-->
+                    <!--android:textSize="16dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/notification_round_corner"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:text="Meeting"-->
+                        <!--android:textSize="12dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:text="12:05"-->
+                        <!--android:textSize="12dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="This is meeting text posted by secratary, and you've missed this notification."-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:textSize="16dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Meeting on 15/11/2018 at 5:00 PM"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/notification_round_corner"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:text="Announcement"-->
+                        <!--android:textSize="12dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:text="15:55"-->
+                        <!--android:textSize="12dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--m-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="This is announcement posted by secratary, and you've missed this notification"-->
+                    <!--android:textSize="16dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/notification_round_corner"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:text="Meeting"-->
+                        <!--android:textSize="12dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:text="12:05"-->
+                        <!--android:textSize="12dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="This is meeting text posted by secratary, and you've missed this notification."-->
+                    <!--android:textSize="16dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Meeting on 15/11/2018 at 5:00 PM"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/notification_round_corner"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:text="Announcement"-->
+                        <!--android:textSize="12dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:text="15:55"-->
+                        <!--android:textSize="12dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="This is announcement posted by secratary, and you've missed this notification"-->
+                    <!--android:textSize="16dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/notification_round_corner"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:text="Meeting"-->
+                        <!--android:textSize="12dp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:text="12:05"-->
+                        <!--android:textSize="12dp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="This is meeting text posted by secratary, and you've missed this notification."-->
+                    <!--android:textSize="16dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Meeting on 15/11/2018 at 5:00 PM"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</RelativeLayout>

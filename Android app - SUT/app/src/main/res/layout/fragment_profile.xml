@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context="com.example.ridhdhish.sut.profile">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="#a27ce6">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/profileToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/toolbarColor"
+            app:titleTextColor="#ffffff">
+
+        </android.support.v7.widget.Toolbar>
+
+        <Button
+            android:id="@+id/btnedit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/ic_edit" />
+
+        <Button
+            android:id="@+id/btnconfirm"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_done"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlUserPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/user"
+            app:civ_border_color="#a27ce6"
+            app:civ_border_width="10dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgProfileEditImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="125dp"
+            android:src="@drawable/ic_camera"
+            android:visibility="gone" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgProfileDeleteImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="125dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llUserProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp">
+
+        <TextView
+            android:id="@+id/lblProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Ridhdhish Desai"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edtProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded"
+            android:elevation="3dp"
+            android:hint="Name"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="Ridhdhish Desai"
+            android:textColor="#000000"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/lblProfileEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingTop="2dp"
+                android:text="test@gmail.com"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtProfileEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/rounded"
+                android:elevation="3dp"
+                android:hint="Email Address"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="test@gmail.com"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flat Number"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/lblProfileFlatNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="A-301"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile" />
+
+            <TextView
+                android:id="@+id/lblProfileMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="8320578360"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtProfileMobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/rounded"
+                android:elevation="3dp"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="8320578360"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/lblProfileGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="Male"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rdoGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rdbProfileGenderMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:text="Male"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/rdbProfileGenderFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="3dp"
+                        android:text="Female"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

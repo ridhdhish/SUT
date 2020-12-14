@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#a27ce6"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.SplashScreen">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/icon" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="SUT"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="40dp"-->
+        <!--android:layout_marginTop="5dp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Secretary Utility Tools"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="20dp"/>0-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:padding="-20dp"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loadinganimation.json"
+        app:lottie_loop="true" />
+
+
+</LinearLayout>

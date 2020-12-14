@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0f1"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.Guest_Dashboard">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="-10dp"
+            android:background="#a27ce6"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:textSize="25dp"/>
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/ic_settings"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@mipmap/icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/guest_round"
+            android:elevation="3dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnGuestDashboard_Flatholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/guest_round"
+                android:text="FLAT HOLDERS"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/guest_round"
+            android:elevation="3dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnGuestDashboard_Admindetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/guest_round"
+                android:text="ADMIN DETAILS"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/guest_round"
+            android:elevation="3dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnGuestDashboard_Societydetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/guest_round"
+                android:text="SOCIETY DETAILS"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#a27ce6"
+    android:gravity="left|center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgNavigationDrawer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/user"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/txtNavigationDrawerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ridhdhish Desai"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/txtNavigationDrawerEmailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ridhdhihsdesai@gmail.com"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:clickable="true"/>
+
+</LinearLayout>

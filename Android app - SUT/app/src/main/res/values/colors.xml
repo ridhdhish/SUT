@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a27ce6</color>
+    <color name="colorPrimaryDark">#a27ce6</color>
+    <color name="colorAccent">#a27ce6</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="color_primary">#212121</color>
+    <color name="color_primary_dark">@android:color/black</color>
+    <color name="color_accent">#4285F4</color>
+    <color name="semi_transparent">#66000000</color>
+    <color name="color_background">#eff0f1</color>
+    <color name="cardbackColor">#E3D4FC</color>
+</resources>

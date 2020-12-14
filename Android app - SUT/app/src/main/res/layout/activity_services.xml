@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0f1"
+    android:orientation="vertical"
+    tools:context="com.example.ridhdhish.sut.Services">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/servicesToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#a27ce6"
+        android:theme="@style/toolbarColor"
+        app:titleTextColor="#ffffff">
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/profile_image"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:src="@drawable/abc"-->
+    <!--app:civ_border_color="#FF000000"/>-->
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Servicesswiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/gridViewServiceChild"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:numColumns="2">
+
+    </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
